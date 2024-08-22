@@ -1,5 +1,5 @@
 import { eachDayOfInterval } from "date-fns";
-
+import { supabase } from "./supabase";
 /////////////
 // GET
 
@@ -80,7 +80,7 @@ export async function getBookings(guestId) {
     .from("bookings")
     // We actually also need data on the cabins as well. But let's ONLY take the data that we actually need, in order to reduce downloaded data.
     .select(
-      "id, created_at, startDate, endDate, numNights, numGuests, totalPrice, guestId, cabinId, cabins(name, image)"
+      "id, created_at, startDate, endDate, numberNights, numberGuests, totalPrice, guestId, cabinId, cabins(name, image)"
     )
     .eq("guestId", guestId)
     .order("startDate");
