@@ -9,6 +9,14 @@ export default async function Navigation() {
       <ul className="flex gap-16 items-center">
         <li>
           <Link
+            href="https://the-wildoasis-admin.netlify.app/"
+            className="hover:text-accent-400 transition-colors"
+          >
+            Management
+          </Link>
+        </li>
+        <li>
+          <Link
             href="/cabins"
             className="hover:text-accent-400 transition-colors"
           >
