@@ -4,7 +4,7 @@
 
 <div align="center">
 
-![Wild Oasis Logo](https://via.placeholder.com/150)
+
 
 </div>
 
